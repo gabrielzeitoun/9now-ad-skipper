@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "9Now Ad Skipper",
+  "version": "0.0.1",
+  "description": "Skips ads on 9now.com.au",
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "matches": ["https://*.9now.com.au/*"]
+    }
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "9Now Ad Skipper",
+    "default_popup": "popup.html"  
+  },
+  "icons": {
+    "16": "extension_icon16.png",
+    "32": "extension_icon32.png",
+    "48": "extension_icon48.png",
+    "128": "extension_icon128.png"
+  }
+}
